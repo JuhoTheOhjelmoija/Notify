@@ -17,20 +17,24 @@ A lightweight Windows application that notifies you when content is copied to th
 ## Requirements
 
 - Windows 10 or later
-- MinGW compiler for building
+- MinGW compiler
+
+## Download
+
+You can download the latest release from the [Releases](https://github.com/JuhoTheOhjelmoija/Notify/releases) page.
 
 ## Building
 
 Compile the program using MinGW with the following command:
 
 ```bash
-x86_64-w64-mingw32-g++ -o ClipboardMonitor.exe clipboard_notifier.cpp -static -static-libgcc -static-libstdc++ -mwindows -luser32 -lgdi32 -lshell32
+x86_64-w64-mingw32-g++ -o Notify.exe clipboard_notifier.cpp -static -static-libgcc -static-libstdc++ -mwindows -luser32 -lgdi32 -lshell32
 ```
 
 ## Usage
 
 1. Compile the program using the command above
-2. Run `ClipboardMonitor.exe`
+2. Run `Notify.exe`
 3. The program will appear only in the system tray
 4. When you copy text to the clipboard, you'll see a notification
 5. To exit, right-click the system tray icon and select "Exit"
